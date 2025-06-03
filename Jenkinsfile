@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git 'https://github.com/gthri2k/sample-pipeline.git'
+        git branch: 'main', url: 'https://github.com/gthri2k/sample-pipeline.git'
       }
     }
     stage('Build') {
